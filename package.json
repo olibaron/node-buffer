@@ -1,19 +1,12 @@
 {
-  "name": "buffer",
-  "description": "Node.js Buffer API, for the browser",
+  "name": "node-buffer",
+  "description": "Port of Node Buffer for web",
   "version": "5.4.3",
   "author": {
-    "name": "Feross Aboukhadijeh",
-    "email": "feross@feross.org",
-    "url": "http://feross.org"
+    "name": "Olivier de Jong-Trejo",
+    "email": "olivier@yello.social",
+    "url": "https://yello.social"
   },
-  "bugs": {
-    "url": "https://github.com/feross/buffer/issues"
-  },
-  "contributors": [
-    "Romain Beauxis <toots@rastageeks.org>",
-    "James Halliday <mail@substack.net>"
-  ],
   "dependencies": {
     "base64-js": "^1.0.2",
     "ieee754": "^1.1.4"
@@ -32,7 +25,7 @@
     "through2": "^3.0.1",
     "uglify-js": "^3.4.5"
   },
-  "homepage": "https://github.com/feross/buffer",
+  "homepage": "https://yello.social",
   "jspm": {
     "map": {
       "./index.js": {
