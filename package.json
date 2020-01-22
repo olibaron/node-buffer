@@ -1,7 +1,7 @@
 {
   "name": "js-node-buffer",
   "description": "Port of Node Buffer for web",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Olivier de Jong-Trejo <olivier@yello.social> (https://yello.social)",
   "dependencies": {
     "base64-js": "^1.0.2",
@@ -43,11 +43,7 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com:olibaron/node-buffer.git"
-  },
-  "scripts": {
-    "perf": "browserify --debug perf/bracket-notation.js > perf/bundle.js && open perf/index.html",
-    "perf-node": "node perf/bracket-notation.js && node perf/concat.js && node perf/copy-big.js && node perf/copy.js && node perf/new-big.js && node perf/new.js && node perf/readDoubleBE.js && node perf/readFloatBE.js && node perf/readUInt32LE.js && node perf/slice.js && node perf/writeFloatBE.js"
+    "url": "git://github.com/olibaron/node-buffer.git"
   },
   "standard": {
     "globals": [
