@@ -1,12 +1,8 @@
 {
-  "name": "node-buffer",
+  "name": "js-node-buffer",
   "description": "Port of Node Buffer for web",
-  "version": "1.0.1",
-  "author": {
-    "name": "Olivier de Jong-Trejo",
-    "email": "olivier@yello.social",
-    "url": "https://yello.social"
-  },
+  "version": "1.0.3",
+  "author": "Olivier de Jong-Trejo <olivier@yello.social> (https://yello.social)",
   "dependencies": {
     "base64-js": "^1.0.2",
     "ieee754": "^1.1.4"
@@ -51,15 +47,7 @@
   },
   "scripts": {
     "perf": "browserify --debug perf/bracket-notation.js > perf/bundle.js && open perf/index.html",
-    "perf-node": "node perf/bracket-notation.js && node perf/concat.js && node perf/copy-big.js && node perf/copy.js && node perf/new-big.js && node perf/new.js && node perf/readDoubleBE.js && node perf/readFloatBE.js && node perf/readUInt32LE.js && node perf/slice.js && node perf/writeFloatBE.js",
-    "size": "browserify -r ./ | uglifyjs -c -m | gzip | wc -c",
-    "test": "standard && node ./bin/test.js",
-    "test-browser-es5": "airtap -- test/*.js",
-    "test-browser-es5-local": "airtap --local -- test/*.js",
-    "test-browser-es6": "airtap -- test/*.js test/node/*.js",
-    "test-browser-es6-local": "airtap --local -- test/*.js test/node/*.js",
-    "test-node": "tape test/*.js test/node/*.js",
-    "update-authors": "./bin/update-authors.sh"
+    "perf-node": "node perf/bracket-notation.js && node perf/concat.js && node perf/copy-big.js && node perf/copy.js && node perf/new-big.js && node perf/new.js && node perf/readDoubleBE.js && node perf/readFloatBE.js && node perf/readUInt32LE.js && node perf/slice.js && node perf/writeFloatBE.js"
   },
   "standard": {
     "globals": [
@@ -71,5 +59,14 @@
       "test/_polyfill.js",
       "perf/**/*.js"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/feross/buffer/issues"
+  },
+  "bin": {
+    "node-buffer": "download-node-tests.js"
+  },
+  "directories": {
+    "test": "test"
   }
 }
