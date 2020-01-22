@@ -1,7 +1,7 @@
 {
   "name": "node-buffer",
   "description": "Port of Node Buffer for web",
-  "version": "5.4.3",
+  "version": "1.0.1",
   "author": {
     "name": "Olivier de Jong-Trejo",
     "email": "olivier@yello.social",
