@@ -1,7 +1,7 @@
 {
   "name": "js-node-buffer",
   "description": "Port of Node Buffer for web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Olivier de Jong-Trejo <olivier@yello.social> (https://yello.social)",
   "dependencies": {
     "base64-js": "^1.0.2",
@@ -59,14 +59,5 @@
       "test/_polyfill.js",
       "perf/**/*.js"
     ]
-  },
-  "bugs": {
-    "url": "https://github.com/feross/buffer/issues"
-  },
-  "bin": {
-    "node-buffer": "download-node-tests.js"
-  },
-  "directories": {
-    "test": "test"
   }
 }
